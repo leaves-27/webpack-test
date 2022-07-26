@@ -2,25 +2,19 @@
   <button @click="count++">{{ count }}</button>
 </template>
 <script lang="ts">
-// export default {
-//   data(){
-//     return {
-//       count: 0
-//     }
-//   }
-// }
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  // setup() {
+  setup() {
+    const count = ref(0);
+    return {
+      count
+    }
+  },
+  // data(){
   //   return {
   //     count: 0
   //   }
-  // },
-  data(){
-    return {
-      count: 0
-    }
-  }
+  // }
 })
 </script>
