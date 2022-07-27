@@ -1,0 +1,34 @@
+<template>
+  <div class="item">
+    <div class="title">{{ props.title }}</div>
+    <div class="desc">{{ desc }}</div>
+  </div>
+</template>
+<style>
+  .item{ display: flex;}
+  .title{ width: 100px; }
+  .desc{ flex: 1; }
+</style>
+<script lang="ts" setup>
+import { defineProps, computed } from 'vue';
+const props = defineProps({
+  title: {
+    type: String,
+    default: '',
+    required: true
+  },
+  description: {
+    type: String,
+    default: '',
+    required: true
+  }
+});
+console.log('=====props:', props)
+
+const desc = computed(() => props.description.slice(0, 20));
+
+// onMounted(()=>{
+
+// })
+
+</script>
