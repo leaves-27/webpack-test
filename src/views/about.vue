@@ -11,6 +11,6 @@ interface Article {
 
 const article = reactive<Article>({
   title: '新文章',
-  description: '的冯绍峰身份的'
+  description: '冯绍峰身份的'
 });
 </script>

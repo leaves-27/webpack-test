@@ -6,7 +6,7 @@
 </template>
 <style>
   .item{ display: flex;}
-  .title{ width: 100px; }
+  .title{ width: 200px; }
   .desc{ flex: 1; }
 </style>
 <script lang="ts" setup>
@@ -23,12 +23,7 @@ const props = defineProps({
     required: true
   }
 });
-console.log('=====props:', props)
 
-const desc = computed(() => props.description.slice(0, 20));
-
-// onMounted(()=>{
-
-// })
+const desc = computed(() => props.description.slice(0, 4));
 
 </script>
