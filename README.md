@@ -13,3 +13,8 @@ yarn build
 ```
 
 to bundle your application
+
+# theme
+1.多个路由
+2.公用状态
+3.父子组件

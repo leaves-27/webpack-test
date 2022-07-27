@@ -28,6 +28,14 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: [{
+          loader: "style-loader",
+        }, {
+          loader: "css-loader",
+        }]
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
@@ -43,7 +51,12 @@ const config = {
                 appendTsSuffixTo: [/.vue$/],
             }
         }]
-    }
+      },
+      // {
+      //   test: /\.styl$/,
+      //   loader: "stylus-loader", // compiles Styl to CSS
+      // },
+      
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
