@@ -11,12 +11,6 @@
   </a-layout>
 </template>
 <style scoped>
-  /* .header{ background-color:brown;}
-  .header a{ display: block; }
-  .body{
-    background-color:darkgray;
-    min-height: 600px;
-  } */
   .link{
     margin-right: 10px;
   }
